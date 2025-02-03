@@ -24,13 +24,13 @@
 2.    [Call Recording 002: Another assurance was given that no charges would apply, as per the sales team's commitment. (+91 95486 32283 – 28/03/2024, 5:10 PM)](./002 He also said that there will be no charges as if sales team has commited +91 95486 32283_20240328171023.m4a.mp3) 
 3.    [Call Recording 003: During the digital agreement process, I was repeatedly assured that there would be zero charges. (Chetan Choudhary – +91 87646 47116 – 30/03/2024, 12:30 PM)](./003 This is the call during digital agreement, your representative continiousely assures there is zero charges Chetan_choudhary_Bajaj_Overdraft@+91_87646_47116_20240330123025.m4a.mp3)
 4.    [Call Recording 004: After the online process, I discovered additional charges in the Bajaj app. Upon raising concerns, the representatives offered a personal refund and again assured no charges if I did not withdraw funds. (Chetan Choudhary – +91 87646 47116 – 01/04/2024, 2:11 PM)](./004 App show charges and withdraw, I said i will report this then they agree to pay me on personal channel and assure there is no charges if I do not withdraw Chetan.m4a.mp3)
-5. Whatsapp chat screenshot, where he confirmed that if I don't withdraw there will be no AMC ![](./006.jpg)  
-6.    [Refund Received on UPI](./005 Refund received UPI.pdf)
+5. [Refund Received on UPI.pdf](./005 Refund received UPI.pdf)
+6. Whatsapp chat screenshot, where he confirmed that if I don't withdraw there will be no AMC ![Whatsapp chat screenshot, where he confirmed that if I don't withdraw there will be no AMC](./006.jpg)  
 
 # Request for Resolution
 
 1. Immediate foreclosure of the OD account with a waiver on foreclosure charges as they never inform about AMC.
-2.   A written/email confirmation that no further charges will be applied to my account.
+2. A written/email confirmation that no further charges will be applied to my account.
 
 #  .
 
