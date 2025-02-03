@@ -33,7 +33,7 @@ append(appmain, "","o")
 append(appmain, gen(section, "mp3", "", "mp3"))
 
 append(mp3, gen(h1, "mp3_h1", "Call Recordings MP3 Files"))
-getfile("/mp3list.txt", e => {
+getfile("./mp3list.txt", e => {
     var file = e.split("\n")
     file.forEach((f,i) => {
         if (!f) return
@@ -50,7 +50,7 @@ getfile("/mp3list.txt", e => {
 })
 
 //Show Grievance.md
-getfile("/Grievance.md",e => {append(appmain,parsemd(e))})
+getfile("./Grievance.md",e => {append(appmain,parsemd(e))})
 
 
 
