@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proof for BajajFinserv Grievance</title>
+</head>
+
+<body>
+<div id="app" class="app">
+
+</div>
+
+
+<script src="https://generatorjs.github.io/generatorjs.cdn/generator.js"></script>
+
+
+<script defer>
+window.$ = GeneratorJs()
+$.init()
+
+//your app logic
+append(app, "", "over") /* reset app */
+append(app, gen(main, "appmain", 'Main content', 'appmain container'));
+
+
+append(appmain, gen(section, "hero", "", "hero"))
+
+append(appmain, "","o")
+
+append(appmain, gen(section, "mp3", "", "mp3"))
+
+append(mp3, gen(h1, "mp3_h1", "Call Recordings MP3 Files"))
+getfile("/mp3list.txt", e => {
+    var file = e.split("\n")
+    file.forEach((f,i) => {
+        if (!f) return
+        append(mp3,gen(p,`mp3_${i}_p`,gen(p,`mp3_${i}_p2`,f.replace("./","").replace(".mp3","").replace(".m4a","")),""))
+        append(`#mp3_${i}_p`, gen(audio, `mp3_${i}`, "f", "", {
+            controls: true,
+            src: f
+        }))
+        append(`#mp3_${i}_p2`, gen(a, `mp3_${i}download`, "download", "download", {
+            download: f,
+            href: f
+        }))
+    })
+})
+
+//Show Grievance.md
+getfile("/Grievance.md",e => {append(appmain,parsemd(e))})
+
+
+
+var siteStyleSCSS = `
+//some temp style in nested css/ scss format
+//@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
+
+:root{
+--hue:200;
+--sat:50%;
+--light:15%;
+--textColor:white;
+--ascentColor:hsl(var(--hueAscent),calc(var(--sat) * 1.5),calc(var(--light) * 2));
+--colorScheme:dark;
+--testShadow:black;
+--lightFactor:1;
+--fontScale:1;
+--fontFamily:"Finlandica","Poppins","Arial";
+}
+*{
+margin:0;
+padding:0;
+}
+
+img,audio,video{
+max-width:80%;
+padding-block:1em;
+}
+
+audio{
+display:inline;}
+
+.download{
+display:inline;
+padding:0 1em;
+background-color:var(--ascentColor,green);
+border-radius:1em;
+color:var(--textColor,white);
+text-decoration:none;
+cursor:pointer;
+text-transform:uppercase;
+margin:1em;
+}
+#mp3{
+padding:2em;
+border-radius:1em;
+box-shadow:2px 2px 2px 2px var(--testShadow);
+}
+#app{
+--h:var(--hue,200);
+--s:var(--sat,50%);
+--l:calc(var(--light,15%) * var(--lightFactor,1));
+display:flex;
+flex-direction:column;
+min-height:100vh;
+color:var(--textColor,white);
+background-color:hsl(var(--h),var(--s),var(--l));
+font-size:calc(1rem * var(--fontScale,1));
+font-family:var(--fontFamily),"arial","sans";
+padding:5px;
+
+
+
+h1{
+padding-block:1em;
+}
+header{
+--s:calc(var(--sat,50%) * var(--lightFactor,1) * 1.5);
+--l:calc(var(--light,15%) * var(--lightFactor,1) * .5);
+
+background-color:hsl(var(--h),var(--s),var(--l));
+position:sticky;
+top:0px;
+min-height:2rem;
+margin-bottom:5em;
+}
+main{
+min-height:60vh;
+p{
+margin:1em;
+}
+span{
+padding:2em;
+margin-right:2em;
+color:var(--ascentColor,aqua);
+text-transform:uppercase;
+}
+}
+footer{
+background-color:hsl(160,50%,10%);
+}
+>*{
+padding-block:3em;
+padding-inline:2em;
+}
+}
+
+
+#appmain{
+display:flex;
+padding-inline:5em;
+max-width:60em;
+flex-direction:column;
+margin:0 auto;
+}
+
+`
+loadscss(siteStyleSCSS)
+</script>
+
+</body>
+
+</html>
