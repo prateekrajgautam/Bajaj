@@ -14,7 +14,7 @@
 </div>
 
 
-<script src="https://generatorjs.github.io/generatorjs.cdn/generator.js"></script>
+<script src="./generator.js"></script>
 
 
 <script defer>
@@ -42,7 +42,7 @@ getfile("./mp3list.txt", e => {
             controls: true,
             src: f
         }))
-        append(`#mp3_${i}_p2`, gen(a, `mp3_${i}download`, "download", "download", {
+        append(`#mp3_${i}_p2`, gen(a, `mp3_${i}download`, `${i+1} Download mp3`, "mp3download download", {
             download: f,
             href: f
         }))
@@ -91,6 +91,9 @@ display:inline-block;
 width:100%;
 }
 
+
+
+
 .download{
 display:inline-block;
 
@@ -102,13 +105,12 @@ text-decoration:none;
 cursor:pointer;
 text-transform:uppercase;
 margin:.5em .5em;
-transition:transform .5s;
-transition:background-color .5s;
+transition:transform .5s ease-in-out;
+transition:background-color .5s ease-in-out;
+
 &:hover{
 background-color:aqua;
-
-transform:scale(1.1);
-
+transition:background-color .5s;
 }
 
 }
@@ -171,7 +173,15 @@ padding-inline:2em;
 }
 }
 
+a,.mp3download{
+    background-color:green;
+    padding:1em;
+    border:2px solid white;
+    display:block;
+    border-radius:1em;
+    color:white;
 
+}
 
 
 p,a{
